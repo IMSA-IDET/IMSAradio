@@ -3,7 +3,7 @@ let loaded = false;
 
 
 //stream urls
-const streamDomain = "http://143.195.39.126:8443";
+const streamDomain = "http://143.195.41.196:8443";
 const xslURL = streamDomain + "/status-json.xsl" 
 const streamLink = streamDomain+ "/stream"
 
