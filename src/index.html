@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="img/logo.png" type="image/png" sizes="128x128 64x64 32x32 16x16 8x8">
+        <link rel="apple-touch-icon" href="img/logo.png">
+        <meta name="theme-color" content="[IMSA COLOR]">
+        <title>ISMA Radio</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       
+        
+        <div id="controlscont"> 
+            <div id="controls">
+                <div id="playbuttoncontainer">
+                    <input type="image" src="img/play.png" id="mediacontrol">
+                </div>
+                <div id="audiotimestamp">
+                    <h3 class="audiotime" id="audiotime">00:00:00</h3>
+                </div>
+                
+            </div>
+            <h6 id="Loading">Loading Stream . . .</h6>
+      </div>
+
+        <div id="chatbox">
+            <h3>Live Chat</h3>
+           <div class="secondary">
+            <ul id="msgs"></ul>
+            <div id="submissionarea">
+                <input type="text" id="textinput" class="inps">
+                <div class="imgcon">
+                    <input type="image" src="img/Send.png" id="submission"  class="inps">
+                </div>
+            </div>
+           </div>
+
+           <h5 id="lstncount">0 Users Listening</h5>
+        </div>
+     
+     
+        <div id="navbar">
+            <img id="logo" src="img/logo.png" />
+            <div>
+                <a href="index.html">Podcast Stream</a>
+            </div>
+            <div>
+                <a href="episodes.html">Episodes</a>
+            </div>
+        </div>
+
+    </body>
+</html>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/audio.js"></script>

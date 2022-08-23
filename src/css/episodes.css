@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #1E1E1E;
+}
+
+
+/* I don't know why the hyper linked text has to be specifically called to override the hyperlink's style, but it does on my end*/
+.season {
+    font-weight: 900;
+    font-size: 48px;
+    padding-top: 3px;
+    text-align: center;
+    left: 50%;
+    color: #ffffff;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    text-decoration: none;
+}
+.season:hover {
+
+    background-color: #292929;
+    font-family: ''
+}
+.seasonlink {
+    color: inherit;
+    text-decoration: none;
+}
+.seasonlink:visited {
+    color: lightslategray;
+}
+
+@media only screen and (max-device-width: 700px){
+    #controls {
+        position: relative;
+        top: 25vh;
+    }
+   
+    .navlink {
+        font-size: medium;
+        margin-left: 3vw;
+    }
+    
+   }

@@ -1,0 +1,33 @@
+#navbar {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 16px -8px rgba(0,0,0,0.75);
+    float: left;
+    top: 0px;
+}
+
+#navbar div {
+    border-bottom: 0px rgba(255, 255, 255, 0.574) solid;
+    transition: 75ms;
+    float: left;
+    padding: 16px;
+}
+
+#navbar div:hover {
+    border-bottom: 2px white solid;
+    background-color: #292929;
+}
+
+#navbar div a {
+    position: relative;
+    color: #ffffff;
+    padding: 24px;
+    font-size:medium;
+    text-decoration: none;
+}
+
+#logo {
+    height: 48px;
+    float: left;
+    padding: 0px 16px 0px 16px;
+}
