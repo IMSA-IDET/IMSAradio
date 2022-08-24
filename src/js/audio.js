@@ -1,5 +1,6 @@
 let playing = false;
 let loaded = false;
+let volume = 1
 
 
 //stream urls
@@ -12,6 +13,7 @@ const mediacontrol = document.getElementById("mediacontrol")
 var audio;
 const loading = document.getElementById("Loading")
 const timestamp = document.getElementById("audiotime")
+const slider = document.getElementById("volumerange")
 
 //loading animation
 var dotcount = 0;
@@ -38,7 +40,7 @@ function loadAudio() {
     loaded = false
     //create new audio (delete last audio if resetting)
     audio = new Audio(streamLink);
-
+    audio.volume = volume;
     //Make loader visible
    
     loading.style.display = "block";
@@ -76,6 +78,12 @@ function loadAudio() {
 }
 loadAudio()
 
+
+//volume slider
+slider.addEventListener('change', ()=>{
+    audio.volume = slider.value
+    console.log(audio.volume)
+})
 
 //pause/play
 mediacontrol.onclick = () => {
