@@ -4,7 +4,7 @@ let volume = 1
 
 
 //stream urls
-const streamDomain = "http://143.195.41.196:8443";
+const streamDomain = "http://143.195.37.164:8443";
 const xslURL = streamDomain + "/status-json.xsl" 
 const streamLink = streamDomain+ "/stream"
 
