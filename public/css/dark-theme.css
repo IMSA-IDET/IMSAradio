@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root {
-    --body-background: #262626;
+    /* colors */
+    --body-background-color: #212121;
     --primary-div-background: #1c1c1c;
+    --nav-underline-color: #ffffff;
+    --focus-text-color: #ffffff;
+    --button-highlight: #2b2b2b;
+    --secondary-dark: #272727;
 
+    /* width-height modifieds */
+    --nav-hoverunderline: 5px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    background-color: var(--body-background-color);
 }

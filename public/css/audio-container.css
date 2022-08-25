@@ -1,0 +1,35 @@
+#audio-container {
+    position:absolute;
+    background-color: var(--primary-div-background);
+    width: 100%;
+    bottom: 0;
+}
+
+#control-container {
+    
+    background-color: var(--secondary-dark) ;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1vh;
+    
+}
+
+
+
+#server-time-start {
+    display: block;
+    color: var(--focus-text-color);
+    margin: 0;
+    font-size: medium;
+}
+
+#media-button {
+    display: block;
+    height: 5vh;
+    margin-left: 1vw;
+  
+}
