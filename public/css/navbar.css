@@ -26,7 +26,7 @@
     text-decoration: none;
     color: var(--focus-text-color);
     border-bottom: 3px solid transparent;
-    font-size: medium;
+    font-size: large;
     transition: 200ms;
     padding: 2vh;
 }

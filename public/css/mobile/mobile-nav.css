@@ -1,0 +1,14 @@
+@media screen and (max-device-width: 600px) {
+    .navlink {
+        text-decoration: none;
+        color: var(--focus-text-color);
+        border-bottom: 3px solid transparent;
+        font-size: 2.25vh;
+        transition: 200ms;
+        padding: 1vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin: 0;
+    }
+    
+  }
