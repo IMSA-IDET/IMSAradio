@@ -1,23 +1,21 @@
 {
   "name": "imsaradio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "icgp": "cd C:/Program Files (x86)/Icecast && icecast",
-    "start": "node streamSite.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nekiwo/IMSARadio.git"
+    "url": "git+https://github.com/IMSA-IDET/IMSAradio.git"
   },
-  "author": "",
+  "author": "IDET",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nekiwo/IMSARadio/issues"
+    "url": "https://github.com/IMSA-IDET/IMSAradio/issues"
   },
-  "homepage": "https://github.com/nekiwo/IMSARadio#readme",
+  "homepage": "https://github.com/IMSA-IDET/IMSAradio#readme",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.1",
