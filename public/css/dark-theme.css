@@ -4,18 +4,20 @@
 :root {
     /* colors */
     --body-background-color: #262626;
-    --primary-div-background: #292929;
+    --primary-div-background: #1a1a1a;
     --nav-underline-color: #ffffff;
     --focus-text-color: #ffffff;
     --button-highlight: #2b2b2b;
-    --button-active: #3c3c3c;
-    --secondary-dark: #242424;
+    --button-active: #525252;
+    --secondary-dark: #4f4e4e;
+    --chat-click-color: #429bd6;
 
     /* Schedule colors */
     --schedule-background: #1c1c1c;
     --list-color: #242424;
     --secondary-list: #bebebe;
     --sub-listcolor: #888888;
+    
 
     /* width-height modifieds */
     --nav-hoverunderline: 5px;

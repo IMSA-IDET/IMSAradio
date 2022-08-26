@@ -1,7 +1,7 @@
 #audio-container {
     background-color: var(--primary-div-background);
     padding: 8px;
-    box-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 2px rgb(105, 105, 105);
     height: 64px;
 }
 
@@ -33,6 +33,7 @@
     display: block;
     color: var(--focus-text-color);
     margin: 0;
+    padding-left: px;
     font-size: medium;
 }
 

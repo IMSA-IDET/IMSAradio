@@ -23,7 +23,7 @@
 
 .navitem {
     position: relative;
-    
+    user-select: none;
 }
 
 .navlink {
