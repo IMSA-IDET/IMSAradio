@@ -6,6 +6,7 @@
     border-radius: 100%;
     margin-bottom: 1vh;
     margin-left: 1vh;
+    box-shadow: 1px 0px 1px black;
 }
 
 #chat-button:hover {

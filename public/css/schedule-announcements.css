@@ -1,14 +1,15 @@
 #doc {
-    width: 768px;
+    width: 60vw;
     position: absolute;
     background-color: #1c1c1c;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 64px;
+    padding-top: 10vh;
     padding-bottom: 86px;
     color: white;
     overflow-y: auto;
-    height: auto;
+    height: 75%;
+    box-shadow: 0px 0px 10px black;
 }
 
 .container {
@@ -19,32 +20,48 @@
     font-weight: 900;
     font-size: 24px;
     margin-bottom: 16px;
-    color: #336dff;
+    color: var(--focus-text-color);
 }
 
 .list {
     border-radius: 16px;
     background-color: #242424;
-    padding: 16px;
+    padding: 2.5vh;
+    height: fit-content;
 }
 
 .event {
     margin-bottom: 32px;
+    
 }
 
 .eventtitle {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 2.5vh;
     margin-bottom: 8px;
+    color: #bebebe;
 }
 
 .eventtime {
     display: inline;
     color: #888888;
+    font-size: 2vh;
 }
 
 .eventdate {
     display: inline;
     float: right;
     color: #888888;
+    font-size: 2vh;
+}
+
+@media screen and (max-device-width: 600px) { 
+#doc {
+    width: 98vw;
+}
+
+.eventtitle {
+    font-size: 1.25vh;
+}
+
 }

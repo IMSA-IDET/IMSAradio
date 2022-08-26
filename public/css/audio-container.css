@@ -3,7 +3,7 @@
     width: 100vw;
     padding-bottom: 5px;
     padding-top: 5px;
-    
+    box-shadow: 0px 0px 2px black;
 
 }
 #bottomnav {
@@ -12,6 +12,7 @@
     height: fit-content;
     width: fit-content;
     position: fixed;
+  
 }
 
 #control-container {
@@ -25,7 +26,7 @@
     align-items: center;
     padding: 1vh;
     border-radius: 25px;
-    
+    box-shadow: 0px 0px 1px black;
     
 }
 
