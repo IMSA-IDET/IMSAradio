@@ -1,0 +1,9 @@
+#chat-button {
+    bottom: auto;
+    height: 4vh;
+    padding: 2vh;
+    background-color: var(--secondary-dark);
+    border-radius: 100%;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+}
