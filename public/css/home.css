@@ -1,0 +1,51 @@
+#doc {
+    width: 768px;
+    height: 100%;
+    position: fixed;
+    background-color: #1c1c1c;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 64px;
+    padding-bottom: 128px;
+    color: white;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#schcontainer {
+    padding: 16px;
+}
+
+#schtitle {
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #336dff;
+}
+
+#sch {
+    border-radius: 16px;
+    background-color: #2b2b2b;
+    padding: 16px;
+}
+
+.event {
+    margin-bottom: 16px;
+}
+
+.eventtitle {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.eventtime {
+    display: inline;
+    color: #888888;
+}
+
+.eventdate {
+    display: inline;
+    float: right;
+    color: #888888;
+}
