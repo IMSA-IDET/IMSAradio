@@ -31,8 +31,9 @@
 }
 
 .event {
-    margin-bottom: 32px;
-    
+    margin-bottom: 1vh;
+    border-top: 1px #bebebe solid;
+    padding-top: 1vh;
 }
 
 .firstevent {
