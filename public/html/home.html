@@ -57,6 +57,18 @@
     </div>
 
     <div id="bottomnav">
+
+        <div id="primary-chat-container">
+            <div id="innerbackground-chat">
+                <ul id="msglist"></ul>
+                <div id="chat-input-container">
+                    <input type="text" id="chat-textinput">
+                    <input type="image" src="/img/send.png" id="chat-sendinput">
+        
+                </div>
+            </div>
+        </div> 
+
         <input type="image" src="/img/chat.png" id="chat-button">
 
         <div id="audio-container">
@@ -65,14 +77,22 @@
                 <input type="image" id="media-button" src="img/play.png" class="audio-inline">
             </div>
         </div>
+
+       
+
     </div>
+
     <div id="navbar">
         <img src="/img/logo.svg" id="navlogo" class="navitem">
         <a class="navlink navitem" href="/">Podcast</a>
         <a class="navlink navitem">Episodes</a>
         <a class="navlink navitem">Credits</a>
     </div>
+    
+    
+
 </body>
 
 </html>
 <script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>

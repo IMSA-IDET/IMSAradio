@@ -1,7 +1,7 @@
 #doc {
     width: 60vw;
     position: absolute;
-    background-color: #1c1c1c;
+    background-color: var(--schedule-background);
     left: 50%;
     transform: translateX(-50%);
     padding-top: 10vh;
@@ -25,14 +25,14 @@
 
 .list {
     border-radius: 16px;
-    background-color: #242424;
+    background-color: var(--list-color);
     padding: 2.5vh;
     height: fit-content;
 }
 
 .event {
     margin-bottom: 1vh;
-    border-top: 1px #bebebe solid;
+    border-top: 1px var(--secondary-list) solid;
     padding-top: 1vh;
 }
 
@@ -48,19 +48,19 @@
     font-weight: 600;
     font-size: 2.5vh;
     margin-bottom: 8px;
-    color: #bebebe;
+    color: var(--secondary-list);
 }
 
 .eventtime {
     display: inline;
-    color: #888888;
+    color: var(--sub-listcolor);
     font-size: 2vh;
 }
 
 .eventdate {
     display: inline;
     float: right;
-    color: #888888;
+    color: var(--sub-listcolor);
     font-size: 2vh;
 }
 
@@ -86,5 +86,9 @@
     padding-top: .125vh;
     margin-bottom: 0;
     padding-bottom: 5vh;
+}
+
+.eventtime {
+    font-size: .5vh;
 }
 }

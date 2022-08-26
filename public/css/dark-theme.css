@@ -11,6 +11,12 @@
     --button-active: #3c3c3c;
     --secondary-dark: #242424;
 
+    /* Schedule colors */
+    --schedule-background: #1c1c1c;
+    --list-color: #242424;
+    --secondary-list: #bebebe;
+    --sub-listcolor: #888888;
+
     /* width-height modifieds */
     --nav-hoverunderline: 5px;
 

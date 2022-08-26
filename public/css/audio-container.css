@@ -12,6 +12,7 @@
     height: fit-content;
     width: fit-content;
     position: fixed;
+    pointer-events: none;
   
 }
 
@@ -46,6 +47,7 @@
     border-radius: 30px;
     transition: 200ms;
     padding: 5px;
+    pointer-events: all;
 }
 
 #media-button:hover {
