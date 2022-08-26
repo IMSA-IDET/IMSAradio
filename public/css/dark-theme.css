@@ -22,3 +22,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--body-background-color);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #383838;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #474747;
+}
