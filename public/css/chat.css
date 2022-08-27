@@ -32,20 +32,17 @@
     border-radius: 5px ;
     box-shadow: 0px 0px 2px black;
     display:block;
+    height: fit-content;
 }
 
-#msglist {
-    height: 50vh;
-    margin: 0;
-    padding-top: 0;
-    width: fit-content;
-}
+
 
 #innerbackground-chat {
     background-color: var(--list-color);
     margin: 0;
     border-radius: 5px ;
-    width: 400px;
+    width: fit-content;
+    height: fit-content;
 }
 
 #chat-input-container {
@@ -75,10 +72,54 @@
     height: 70%;
     padding: 1vh;
     color: var(--focus-text-color);
-    width: 15vw;
+    width: 100%;
     user-select: none;
 }
 
+
+#msglist{
+    padding: 0px;
+    margin: 0px;
+    width: fit-content;
+    height: 372px;
+    padding-inline-start: 0;
+    margin-inline-start: 0;
+    padding-top:2.5px;
+}
+.msg {
+    background-color: var(--chat-msg-color);
+    width: 250px;
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    color: var(--focus-text-color);
+    overflow: auto;
+}
+
+.nmtm-cont {
+    overflow: auto;
+}
+
+.msgcontent {
+    margin: 0;
+    padding: 0;
+}
+.msgname {
+    display: inline;
+    float:left;
+    margin: 0;
+    padding: 0;
+    color: var(--chat-click-color);
+}
+
+.msgtime {
+    color: var(--secondary-dark);
+    font-size: xx-small;
+    display: inline;
+    float: right;
+    margin: 3px;
+    padding: 0;
+}
 
 @media screen and (max-device-width: 600px) {
     #chat-button:hover {
