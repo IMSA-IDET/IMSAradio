@@ -8,8 +8,16 @@
     display: block;
     height: 40px;
     margin-left: 1vw;
+    
   }
 
+  #media-button:hover {
+    background-color: var(--secondary-dark)
+  }
+
+  #media-button:active {
+    background-color:  var(--secondary-dark)
+  }
   #audio-container {
     width: 100vw;
   }

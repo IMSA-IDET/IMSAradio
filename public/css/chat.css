@@ -89,7 +89,7 @@
 }
 .msg {
     background-color: var(--chat-msg-color);
-    width: 223px;
+    width: 236px;
     list-style: none;
     padding: 0;
     margin: 5px;
@@ -118,7 +118,7 @@
 }
 
 .msgtime {
-    color: var(--secondary-dark);
+    color: var(--chat-time-color);
     font-size: xx-small;
     display: inline;
     float: right;
@@ -147,7 +147,28 @@
 }
 
 @media screen and (max-device-width: 600px) {
+
+    #chat-sendinput {
+        height: 25px;
+    }
     #chat-button:hover {
         background-color: var(--chat-click-color); 
+    }
+
+    #primary-chat-container {
+        margin: 0 auto;
+        width: 322px;
+    }
+
+    #innerbackground-chat {
+        margin: 0 auto;
+        width: 322px;
+    }
+
+    #msglist {
+        height: 416px;
+    }
+    .msg {
+        width: 310px;
     }
 }

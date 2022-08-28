@@ -34,8 +34,10 @@ app.get('/', (req, res)=>{
 
 //Socket.io routing
 io.on('connection', (connection)=> {
+    var address = connection.handshake.address;
     connections += 1
     connection.on('chat-message-receive', msg =>{
+        msg.name = address.replace("::ffff:", "")
         io.emit('chat-message-receive', msg )
     })
     io.emit('connectionChange', connections)

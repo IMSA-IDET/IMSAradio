@@ -26,7 +26,7 @@ function sendmessage() {
 
 //Send Message
 msgsend.onclick = ()=>{sendmessage()};
-document.onkeyup = (key)=>{ if (key.code == "Enter") sendmessage()}
+document.onkeyup = (key)=>{ if (key.key == "Enter") sendmessage();}
 
 
 //Recieve Message
