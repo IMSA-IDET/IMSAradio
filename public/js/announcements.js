@@ -1,11 +1,53 @@
+//Elements
+const schedulelist = document.getElementById("schedule");
+const announcementlist = document.getElementById("announcements")
 
 function makeScheduleEvent(title, time, date) {
-    let event = document.createElement('div')
-    .classList.add("event");
+    let event = document.createElement('div');
+    event.classList.add("event");
 
-    let time = document.createElement('div')
-    .classList.add('eventtime')
+    let etitle = document.createElement('div');
+    etitle.classList.add('eventtitle');
+    event.appendChild(etitle)
+    etitle.innerText = title;
+
+    let etime = document.createElement('div');
+    etime.classList.add('eventtime');
+    event.appendChild(etime)
+    etime.innerText = time;
+
+    let edate = document.createElement('div');
+    edate.classList.add("eventdate");
+    event.appendChild(edate)
+    edate.innerText = date
+
+    return event
 }
+
+function makeAnnouncement(title, date) {
+    let event = document.createElement('div');
+    event.classList.add("event");
+
+    let etitle = document.createElement('div');
+    etitle.classList.add('eventtitle');
+    event.appendChild(etitle)
+    etitle.innerText = title;
+
+    let etime = document.createElement('div');
+    etime.classList.add('eventtime');
+    event.appendChild(etime)
+    etime.innerText = time;
+
+    let edate = document.createElement('div');
+    edate.classList.add("eventdate");
+    event.appendChild(edate)
+    edate.innerText = date
+
+    return event
+}
+
+
+
 
 
 /*
