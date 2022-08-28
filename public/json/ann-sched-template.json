@@ -1,4 +1,8 @@
 {
-    "announcements": {},
-    "schedule": {}
+    "announcements": {
+        "1": {"title": "title", "date": "Friday, August 25"}
+    },
+    "schedule": {
+        "1": {"title": "title", "date": "Friday August 25", "time": "time"}
+    }
 }
