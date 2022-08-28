@@ -45,7 +45,6 @@ io.on('connection', (connection)=> {
     connection.on('disconnect', ()=>{
         connections -= 1
         io.emit('connectionChange', connections)
-        console.log('sd')
     })
 
     })

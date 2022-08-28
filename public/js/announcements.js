@@ -33,19 +33,16 @@ function makeAnnouncement(title, date) {
     event.appendChild(etitle)
     etitle.innerText = title;
 
+
     let etime = document.createElement('div');
     etime.classList.add('eventtime');
     event.appendChild(etime)
-    etime.innerText = time;
-
-    let edate = document.createElement('div');
-    edate.classList.add("eventdate");
-    event.appendChild(edate)
-    edate.innerText = date
+    etime.innerText = date;
 
     return event
 }
 
+announcementlist.append(makeAnnouncement("what", "okay"))
 
 
 
