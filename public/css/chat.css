@@ -41,7 +41,7 @@
     background-color: var(--list-color);
     margin: 0;
     border-radius: 5px ;
-    width: fit-content;
+    width: 247px;
     height: fit-content;
 }
 
@@ -85,10 +85,11 @@
     padding-inline-start: 0;
     margin-inline-start: 0;
     padding-top:2.5px;
+    overflow-y: auto;
 }
 .msg {
     background-color: var(--chat-msg-color);
-    width: 250px;
+    width: 223px;
     list-style: none;
     padding: 0;
     margin: 5px;
@@ -103,11 +104,15 @@
 .msgcontent {
     margin: 0;
     padding: 0;
+    margin: 5px;
+    margin-top: 0;
+    color: var(--chat-content-color);
+    word-wrap: break-word;
 }
 .msgname {
     display: inline;
     float:left;
-    margin: 0;
+    margin: 5px;
     padding: 0;
     color: var(--chat-click-color);
 }
@@ -119,6 +124,26 @@
     float: right;
     margin: 3px;
     padding: 0;
+}
+
+#connectioncount {
+    
+    color: var(--focus-text-color);
+}
+
+#connectiondiv {
+    position: absolute;
+    display: flex;
+    float: left;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+}
+
+#connectionpng {
+   
+    height: 50px;
 }
 
 @media screen and (max-device-width: 600px) {

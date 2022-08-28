@@ -15,6 +15,7 @@
 }
 
 #control-container {
+    position: relative;
     background-color: var(--secondary-dark) ;
     width: fit-content;
     height: fit-content;

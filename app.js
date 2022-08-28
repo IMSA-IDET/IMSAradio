@@ -1,8 +1,12 @@
 //Library Dependenciies
 const express = require("express");
 const { Server } = require("socket.io");
-const fs = require("fs")
-const http = require("http")
+const http = require('http')
+const fs = require("fs");
+const { emit, listeners, disconnect } = require("process");
+
+//Connection Tracker
+var connections = 0;
 
 //Settings
 const port = 80;
@@ -27,6 +31,22 @@ app.get('/', (req, res)=>{
      res.render("home.html")
     })
 
+
+//Socket.io routing
+io.on('connection', (connection)=> {
+    connections += 1
+    connection.on('chat-message-receive', msg =>{
+        io.emit('chat-message-receive', msg )
+    })
+    io.emit('connectionChange', connections)
+
+    connection.on('disconnect', ()=>{
+        connections -= 1
+        io.emit('connectionChange', connections)
+        console.log('sd')
+    })
+
+    })
 
 
 //Start server listening
