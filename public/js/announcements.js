@@ -57,7 +57,9 @@ fetch(jsonurl).then(data=>data.json()).then(data=>{
     //schedule
     const sch = data.schedule;
     for (i in sch) {
+        console.log(sch)
         let sc = sch[i]
+        console.log(sc)
         schedulelist.appendChild(makeScheduleEvent(sc.title,sc.time,sc.date))
     }
 

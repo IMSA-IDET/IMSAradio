@@ -1,7 +1,7 @@
 #doc {
     top: 64px;
     height: calc(100% - 144px);
-    width: 1000px;
+    width: 750px;
     position: absolute;
     background-color: var(--schedule-background);
     left: 50%;

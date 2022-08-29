@@ -82,7 +82,7 @@
     padding: 0px;
     margin: 0px;
     width: fit-content;
-    height: 400px;
+    height: 250px;
     padding-inline-start: 0;
     margin-inline-start: 0;
     padding-top:2.5px;
@@ -90,7 +90,7 @@
 }
 .msg {
     background-color: var(--chat-msg-color);
-    width: 346px;
+    width: 244px;
     list-style: none;
     padding: 0;
     margin: 5px;
@@ -109,7 +109,7 @@
     margin-top: 0;
     color: var(--chat-content-color);
     word-wrap: break-word;
-    font-size: 15px;
+    font-size: 12px;
 }
 .msgname {
     display: inline;
@@ -117,7 +117,7 @@
     margin: 5px;
     padding: 0;
     color: var(--chat-click-color);
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .msgtime {
@@ -127,7 +127,7 @@
     float: right;
     margin: 3px;
     padding: 0;
-    font-size: 12px;
+    font-size: 9px;
 }
 
 #connectioncount {
