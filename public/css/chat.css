@@ -81,7 +81,7 @@
     padding: 0px;
     margin: 0px;
     width: fit-content;
-    height: 372px;
+    height: 330px;
     padding-inline-start: 0;
     margin-inline-start: 0;
     padding-top:2.5px;
@@ -144,6 +144,14 @@
 #connectionpng {
    
     height: 50px;
+}
+
+#lvcht {
+    color: var(--focus-text-color);
+    text-align: center;
+    margin: 0;
+    padding: 2px;
+    font-size: medium;
 }
 
 @media screen and (max-device-width: 600px) {

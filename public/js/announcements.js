@@ -42,9 +42,11 @@ function makeAnnouncement(title, date) {
     return event
 }
 
-announcementlist.append(makeAnnouncement("what", "okay"))
 
 
+fetch("/json/announcements-schedule.json").then(data=>data.json()).then(data=>{
+    console.log(data)
+})
 
 
 /*
