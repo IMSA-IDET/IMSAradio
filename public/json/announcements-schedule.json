@@ -1,4 +1,11 @@
 {
-    "announcements": {},
+    "announcements": {
+        "1": {"title": "title","date": "date"},
+        "2": {"title": "title","date": "date"},
+        "3": {"title": "title","date": "date"},
+        "4": {"title": "title","date": "date"},
+        "5": {"title": "title","date": "date"},
+        "6": {"title": "title","date": "date"}
+    },
     "schdule": {}
 }

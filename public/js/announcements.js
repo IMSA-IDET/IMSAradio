@@ -45,7 +45,22 @@ function makeAnnouncement(title, date) {
 
 
 fetch("/json/announcements-schedule.json").then(data=>data.json()).then(data=>{
-    console.log(data)
+    //announcements
+    const anns = data.announcements;
+    for (i in anns) {
+        let an = anns[i]
+        announcementlist.appendChild(makeAnnouncement(an.title, an.date))
+    }
+
+    //schedule
+    const sch = data.schedule;
+    for (i in sch) {
+        let sc = sch[i]
+        schedulelist.appendChild(makeScheduleEvent(sc.title,sc.time,sc.date))
+    }
+
+
+
 })
 
 
