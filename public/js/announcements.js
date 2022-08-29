@@ -1,5 +1,5 @@
 //json url
-jsonurl="https://raw.githubusercontent.com/IMSA-IDET/IMSAradio/audio-overhaul/public/json/announcements-schedule.json"
+jsonurl="/json/announcements-schedule.json"
 //Elements
 const schedulelist = document.getElementById("schedule");
 const announcementlist = document.getElementById("announcements")
