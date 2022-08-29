@@ -1,11 +1,6 @@
 {
     "announcements": {
-        "1": {"title": "title","date": "date"},
-        "2": {"title": "title","date": "date"},
-        "3": {"title": "title","date": "date"},
-        "4": {"title": "title","date": "date"},
-        "5": {"title": "title","date": "date"},
-        "6": {"title": "title","date": "date"}
+        "1": {"title": "We have no clue what were doing","date": "Monday, August 29th"}
     },
     "schdule": {}
 }

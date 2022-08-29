@@ -41,7 +41,7 @@
     background-color: var(--list-color);
     margin: 0;
     border-radius: 5px ;
-    width: 247px;
+    width: 358px;
     height: fit-content;
 }
 
@@ -81,7 +81,7 @@
     padding: 0px;
     margin: 0px;
     width: fit-content;
-    height: 330px;
+    height: 413px;
     padding-inline-start: 0;
     margin-inline-start: 0;
     padding-top:2.5px;
@@ -89,7 +89,7 @@
 }
 .msg {
     background-color: var(--chat-msg-color);
-    width: 236px;
+    width: 346px;
     list-style: none;
     padding: 0;
     margin: 5px;
@@ -108,6 +108,7 @@
     margin-top: 0;
     color: var(--chat-content-color);
     word-wrap: break-word;
+    font-size: medium;
 }
 .msgname {
     display: inline;
@@ -115,11 +116,12 @@
     margin: 5px;
     padding: 0;
     color: var(--chat-click-color);
+    font-size: medium;
 }
 
 .msgtime {
     color: var(--chat-time-color);
-    font-size: xx-small;
+    font-size: small;
     display: inline;
     float: right;
     margin: 3px;

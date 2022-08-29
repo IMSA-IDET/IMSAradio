@@ -1,3 +1,5 @@
+//json url
+jsonurl="https://raw.githubusercontent.com/IMSA-IDET/IMSAradio/audio-overhaul/public/json/announcements-schedule.json"
 //Elements
 const schedulelist = document.getElementById("schedule");
 const announcementlist = document.getElementById("announcements")
@@ -44,7 +46,7 @@ function makeAnnouncement(title, date) {
 
 
 
-fetch("/json/announcements-schedule.json").then(data=>data.json()).then(data=>{
+fetch(jsonurl).then(data=>data.json()).then(data=>{
     //announcements
     const anns = data.announcements;
     for (i in anns) {
