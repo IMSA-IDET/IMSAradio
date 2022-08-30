@@ -1,4 +1,4 @@
-const { json } = require("express");
+
 
 //conversions
 const mountpoint = "/stream"
@@ -67,18 +67,3 @@ function toggleAudioVisuals(audio) {
 }
 
 
-//xsl time
-fetch("/json/hostname.json").then(data=>data.json()).then(data=>{
-
-    //xsl function loop
-    function updateServerClock() {
-
-        fetch(`${data.hostname}:${port}${xslSuffix}`).then(dats=>dats.json())
-    
-        setTimeout(updateServerClock, 1000)
-    }
-
-
-
-
-})
