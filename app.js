@@ -2,8 +2,10 @@
 const express = require("express");
 const { Server } = require("socket.io");
 const http = require('http')
+const bodyParser = require('body-parser')
 const fs = require("fs");
-const { emit, listeners, disconnect } = require("process");
+const { json } = require("body-parser");
+require("dotenv").config();
 
 //Connection Tracker
 var connections = 0;
@@ -21,9 +23,22 @@ app.set('view engine','ejs');
 app.engine('html', require('ejs').renderFile);
 //Host static files in "/public"
 app.use(express.static('public', {extensions: ["html"]}))
+app.use(bodyParser.urlencoded({extended: true}))
 
 //set views
 app.set('views', __dirname + '/public/html')
+
+//handle hostname change post
+app.post('/sethost', (req,res)=> {
+    if (req.body.password == process.env.HOSTNAMEPASS) {
+       var dat = JSON.parse(fs.readFileSync(__dirname +"/public/json/hostname.json"))
+       dat.hostname = req.body.ip
+       fs.writeFileSync(__dirname +"/public/json/hostname.json",JSON.stringify(dat))
+       res.end(`hostname set to ${req.body.ip}`)
+    }else {
+        res.end("password invalid")
+    }
+})
 
 
 //Route "/" to home.html dynamically

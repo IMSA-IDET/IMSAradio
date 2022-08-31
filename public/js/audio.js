@@ -10,6 +10,7 @@ var audio;
 //elements
 const mediabutton = document.getElementById("media-button")
 const loading = document.getElementById('Loading');
+const timestamp = document.getElementById('server-time-start')
 const playpng = "/img/play.png"
 const pausepng = "/img/pause.png"
 
@@ -67,3 +68,39 @@ function toggleAudioVisuals(audio) {
 }
 
 
+fetch("/json/hostname.json").then(data=>data.json()).then(data=>{ 
+
+    setInterval(() => {
+      
+        fetch(`http://${data.hostname}:${data.port}${xslSuffix}`)
+            .then((res) => res.json())
+            .then((data) => {
+                let currentTime = Date.now();
+                timeStart = new Date(data.icestats.server_start).getTime();
+                let subtract = currentTime - timeStart;
+                timestamp.innerText = returnParsed(subtract);
+    
+            }).catch((err) => {
+                console.log(err)
+        });
+    }, 1000);
+    
+
+})
+
+//ez ggg
+function returnParsed(times) {
+    let time = times/1000
+    let parsedTime = [
+        Math.floor(time / 60 / 60).toString(),
+        Math.floor((time / 60) % 60).toString(),
+        Math.floor(time % 60).toString()
+    ];
+    for (let i = 0; i < 3; i++) {
+        if (parsedTime[i].length === 1) {
+            parsedTime[i] = `0${parsedTime[i]}`
+        }
+    }
+    let parsedTimes = `${parsedTime[0]}:${parsedTime[1]}:${parsedTime[2]}`
+    return parsedTimes
+} 

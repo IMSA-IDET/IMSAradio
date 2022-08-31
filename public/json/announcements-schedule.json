@@ -1,8 +1,7 @@
 {
     "announcements": {
-        "1": {"title": "Updates are being made to the website, check back later for podcast","date": "Monday, August 29th"}
+        "1": {"title": "Updates are being made to the website, check back later for podcast","date": "Monday, August 29th"},
+        "2": {"title": "Website has been refurbished","date": "Wednesday, August 31st"}
     },
-    "schedule": {
-        "1": {"title": "Interview with Michael Gochee", "date": "Monday, August 29th", "time": "9:00 - 10:00pm"}
-    }
+    "schedule": {}
 }
