@@ -33,8 +33,9 @@ app.post('/sethost', (req,res)=> {
     if (req.body.password == process.env.HOSTNAMEPASS) {
        var dat = JSON.parse(fs.readFileSync(__dirname +"/public/json/hostname.json"))
        dat.hostname = req.body.ip
+       dat.port = req.body.port
        fs.writeFileSync(__dirname +"/public/json/hostname.json",JSON.stringify(dat))
-       res.end(`hostname set to ${req.body.ip}`)
+       res.end(`host set to ${req.body.ip}:${req.body.port}`)
     }else {
         res.end("password invalid")
     }
